@@ -60,10 +60,10 @@ Uses **MySQL** as the database backend.
 ## 📸 Screenshots
 
 ### 🔑 Sign Up Page
-![Sign Up](screenshots/sign_up.png)
+![Sign Up](screenshots/Sign_Up.png)
 
 ### 🔐 Sign In Page
-![Sign In](screenshots/sign_in.png)
+![Sign In](screenshots/Sign_In.png)
 
 ### ➕ Add Room Form
 ![Add Room](screenshots/Book_Hotel.png)
