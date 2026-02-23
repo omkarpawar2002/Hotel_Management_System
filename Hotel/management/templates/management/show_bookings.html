@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Show Bookings</title>
+{% endblock %}
+
+{% block content %}
+<table class="table table-striped">
+    <thead>
+        <tr style="text-align: center;">
+            <th>Id</th>
+            <th>Hotel Name</th>
+            <th>Hotel Address</th>
+            <th>Room No</th>
+            <th>Room Type</th>
+            <th>Price</th>
+            <th>Availability</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in records %}
+        <tr style="text-align: center;">
+            <td>{{record.id}}</td>
+            <td>{{record.hotel_name}}</td>
+            <td>{{record.hotel_address}}</td>
+            <td>{{record.room_type}}</td>
+            <td>{{record.room_number}}</td>
+            <td>{{record.room_price}}</td>
+            <td>{{record.availability}}</td>
+            <td>
+                <a href="{% url 'update_bookings' record.id %}"><button class="btn btn-primary btn-large me-2"
+                        type="button">Edit</button></a>
+                <a href="{% url 'delete_bookings' record.id %}"><button class="btn btn-danger btn-large me-2"
+                        type="button">Delete</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

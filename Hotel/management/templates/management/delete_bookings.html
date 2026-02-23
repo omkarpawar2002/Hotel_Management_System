@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Delete Bookings</title>
+{% endblock %}
+
+{% block content %}
+<div class="container" style="
+    border: 2px solid black;
+    padding: 28px;
+    background-color: #d2bdbd;
+    border-radius: 20px;">
+    <h1 style="text-align: center;">Delete Bookings</h1>
+    <form method="post">
+        {% csrf_token %}
+        <h2 style="text-align: center; padding-top: 20px;">Are You Sure Want To Delete This Record ?</h2>
+        <h2 style="text-align: center;padding-top: 20px;">Hotel Name : {{obj.hotel_name}} and Room Number : {{obj.room_number}}</h2>
+        <button type="submit" class="btn btn-outline-dark col-5">Delete</button>
+        <a href="{% url 'show_bookings' %}"><button type="button"
+                class="btn btn-outline-dark col-5 float-end">Cancel</button></a>
+    </form>
+</div>
+{% endblock %}

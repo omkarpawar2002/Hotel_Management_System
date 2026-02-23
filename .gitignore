@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environment
+venv/
+env/
+ENV/
+*.env
+*.venv
+
+# Django stuff
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+*.pot
+*.pyc
+
+# MySQL database dumps / configs
+*.sql
+*.cnf
+*.ini
+*.cfg
+
+# Environment variables (important for DB credentials)
+.env
+.env.*
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Migrations cache (optional, you can keep migrations if you want version control)
+*/migrations/__pycache__/

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Sign In</title>
+{% endblock %}
+
+{% block content %}
+<div class="container" style="
+    border: 2px solid black;
+    padding: 28px;
+    background-color: #d2bdbd;
+    border-radius: 20px;">
+    <h1 style="text-align: center;">Sign In / Log In</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter UserName" class="form-control">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="********" class="form-control">
+        </div>
+        <br>
+        <div>
+            <button type="submit" class="btn btn-outline-dark col-5">Sign In</button>
+            <a href="{% url 'sign_up' %}"><button type="button" class="btn btn-outline-dark col-5 float-end">Sign
+                    Up</button></a>
+        </div>
+    </form>
+</div>
+{% endblock %}
