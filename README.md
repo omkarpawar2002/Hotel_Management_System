@@ -54,30 +54,6 @@ Uses **MySQL** as the database backend.
    ```
    python manage.py runserver
    ```
-
-## 📂 Project Structure
-```
-    Hotel_Management_System/
-    │
-    ├── hotel/                  # Django project folder
-    ├── management/             # App folder (models, views, forms, templates)
-    │   ├── templates/
-    │   │   └── management/
-    │   │       ├── base.html
-    │   │       ├── room_list.html
-    │   │       ├── room_form.html
-    │   │       └── room_confirm_delete.html
-    │   ├── static/
-    │   │   └── css/style.css
-    │   ├── models.py
-    │   ├── forms.py
-    │   ├── views.py
-    │   └── urls.py
-    ├── requirements.txt
-    ├── manage.py
-    └── README.md
-```
-
 ---
 
 ## 📸 Screenshots
