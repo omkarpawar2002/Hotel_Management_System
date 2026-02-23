@@ -59,6 +59,12 @@ Uses **MySQL** as the database backend.
 
 ## 📸 Screenshots
 
+### 🔑 Sign Up Page
+![Sign Up](screenshots/sign_up.png)
+
+### 🔐 Sign In Page
+![Sign In](screenshots/sign_in.png)
+
 ### ➕ Add Room Form
 ![Add Room](screenshots/Book_Hotel.png)
 
