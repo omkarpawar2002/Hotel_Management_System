@@ -1,6 +1,6 @@
 # 🏨 Hotel Management System
 
-A Django-based Hotel Management System featuring CRUD operations for hotel rooms.  
+A Django-based Hotel Management System featuring CRUD operations for Hotel Rooms.  
 Includes Bootstrap-styled forms, dropdowns for room types, and automatic timestamps for record creation and updates.  
 Uses **MySQL** as the database backend.
 
